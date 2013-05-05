@@ -14,6 +14,9 @@ alphaLength: 10
 #Maximum length of the numbers generated for math questions (default: 4)
 mathMaxLength: 4
 
+#Is the AlphaNumeric test Case Sensitive ?
+alphaCaseSensitive: true
+
 #How often will a new question be generated in seconds (default: 300)
 #If you want a question to be generated at random periods use something like 300 - 600
 #This will generate the question at random period from 5 to 10 minutes

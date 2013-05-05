@@ -7,6 +7,7 @@ import net.milkbowl.vault.economy.Economy;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.ChatColor;
 
 public class ReactionRewards extends JavaPlugin {
 	public Logger log = Logger.getLogger("Minecraft");
@@ -165,12 +166,9 @@ public class ReactionRewards extends JavaPlugin {
     //Format a string to have the plugin prefix in front of it
     public String parseString(String s) {
     	if(getCfg("lang").contains("Prefix") && getCfg("lang").getString("Prefix") != "") {
-    		String parsed = getCfg("lang").getString("Prefix") + s;
-    		parsed = parsed.replace("$", "§");
-    		return parsed;
+    		return ChatColor.translateAlternateColorCodes('&', getCfg("lang").getString("Prefix") + s);
     	} else {
-    		s = s.replace("$", "§");
-    		return s;
+    		return ChatColor.translateAlternateColorCodes('&', s);
     	}
     }
     

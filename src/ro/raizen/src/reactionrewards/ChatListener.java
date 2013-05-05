@@ -78,7 +78,11 @@ public class ChatListener implements Listener {
 			plugin.getQuestionHandler().setExpired();
 			return true;
 		}
-		if(!plugin.getQuestionHandler().getType().equalsIgnoreCase("trivia") && Arrays.asList(plugin.getQuestionHandler().getAnswers()).contains(a)) {
+		if(plugin.getQuestionHandler().getType().equalsIgnoreCase("alpha") && !plugin.getCfg("main").getBoolean("alphaCaseSensitive") && containsIgnoreCase(a, plugin.getQuestionHandler().getAnswers())) {
+			plugin.getQuestionHandler().setExpired();
+			return true;
+		}
+		else if(!plugin.getQuestionHandler().getType().equalsIgnoreCase("trivia") && Arrays.asList(plugin.getQuestionHandler().getAnswers()).contains(a)) {
 			plugin.getQuestionHandler().setExpired();
 			return true;
 		}

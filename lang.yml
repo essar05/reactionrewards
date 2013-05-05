@@ -1,14 +1,14 @@
-Prefix: $b[ReactionRewards] $e
-noPermission: You don't have permission to use this command
+Prefix: '&b[ReactionRewards] &e'
+noPermission: 'You don''t have permission to use this command'
 leaderboardTemplate: '%s. %s - %s wins'
-leaderboardEmpty: Leaderboard is empty
-configsReloaded: Configuration files have been reloaded
-broadcastTrivia: First player to correctly answer the question below wins $c%s$e
-broadcastAlpha: First player to type $c%s$e wins $c%s$e
-broadcastMath: First player to solve $c%s$e wins $c%s$e
-broadcastWin: Player $c%s$e won the reaction test in $c%s$e seconds
-sendWin: You were given $c%s$e
-alreadyRunning: The reaction test is already running
-genStarted: The reaction test was started
-notRunning: The reaction test is not running
-genStopped: The reaction test was stopped
+leaderboardEmpty: 'Leaderboard is empty'
+configsReloaded: 'Configuration files have been reloaded'
+broadcastTrivia: 'First player to correctly answer the question below wins &c%s&e'
+broadcastAlpha: 'First player to type &c%s&e wins &c%s&e'
+broadcastMath: 'First player to solve &c%s&e wins &c%s&e'
+broadcastWin: 'Player &c%s&e won the reaction test in &c%s&e seconds'
+sendWin: 'You were given &c%s&e'
+alreadyRunning: 'The reaction test is already running'
+genStarted: 'The reaction test was started'
+notRunning: 'The reaction test is not running'
+genStopped: 'The reaction test was stopped'
